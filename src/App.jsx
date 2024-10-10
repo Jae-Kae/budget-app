@@ -1,6 +1,10 @@
 // rrd imports
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
+// library imports
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
 // actions
 import { logoutAction } from './actions/logout'
 
@@ -38,7 +42,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className='App'>
-      <RouterProvider router={router} />{' '}
+      <RouterProvider router={router} /> <ToastContainer />
     </div>
   )
 }
